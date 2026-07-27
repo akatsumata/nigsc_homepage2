@@ -8,7 +8,7 @@ title: alphafold 3
 
 AlphaFold3 is a protein structure prediction program developed by [DeepMind](https://deepmind.com/).
 
-On the NIG supercomputer, an Apptainer image with [AlphaFold 3.0.2](https://github.com/google-deepmind/alphafold3/tree/v3.0.2) installed is provided, along with the sequence and structure databases required for AlphaFold3 and sample scripts for submitting jobs to SLURM.
+On the NIG supercomputer, an Apptainer image with [AlphaFold 3.0.3](https://github.com/google-deepmind/alphafold3/tree/v3.0.3) installed is provided, along with the sequence and structure databases required for AlphaFold3 and sample scripts for submitting jobs to SLURM.
 
 The model parameter files required to run AlphaFold3 must be obtained directly by users from DeepMind, as [described later](#prep-model-params) in this manual.
 
@@ -100,7 +100,7 @@ OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -222,7 +222,7 @@ OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
 DB_DIR="/lustre10/software/alphafold3/database"
-IMAGE_PATH="/lustre10/softwar/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
+IMAGE_PATH="/lustre10/softwar/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -286,8 +286,8 @@ If you are using **dedicated CPU nodes** in the Personal Genome Analysis divisio
 If you do so, modify DB_DIR to point to the copied database path.
 
 - Line 11: `IMAGE_PATH`
-    - When running in the **General Analysis division**, use `/lustre10/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif`
-    - When running in the **Personal Genome Analysis division**, use `/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif`
+    - When running in the **General Analysis division**, use `/lustre10/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif`
+    - When running in the **Personal Genome Analysis division**, use `/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif`
 
 Within the AlphaFold3 execution script, the MSA process is configured to use up to **32 CPU cores**, but assigning more than **16 cores** does not improve performance.
 Therefore, the number of CPU cores is specified as `-c 16`.
@@ -382,7 +382,7 @@ OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -494,7 +494,7 @@ OUTPUT_DIR="${HOME}/alphafold3_test/output"
 MODEL_DIR="${HOME}/alphafold3_test/models"
 
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
