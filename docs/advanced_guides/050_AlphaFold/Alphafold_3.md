@@ -8,7 +8,7 @@ title: 遺伝研スパコンでのalphafold 3の実行
 
 AlphaFold3 は[DeepMind社](https://deepmind.com/)が開発したタンパク質立体構造予測プログラムです。
 
-遺伝研スパコンでは [alphafold 3.0.2](https://github.com/google-deepmind/alphafold3/tree/v3.0.2) をインストールした apptainer image、AlphaFold3で使用する配列・構造データベース、slurmにジョブを投入するサンプルスクリプトを用意してあります。
+遺伝研スパコンでは [alphafold 3.0.3](https://github.com/google-deepmind/alphafold3/tree/v3.0.3) をインストールした apptainer image、AlphaFold3で使用する配列・構造データベース、slurmにジョブを投入するサンプルスクリプトを用意してあります。
 
 AlphaFold3 の実行に必要なモデルパラメータファイルは、[後述](#prep-model-params)するようにユーザー様ご自身でDeepMind社から取得していただく必要がございます。
 
@@ -66,7 +66,7 @@ L40Sノードへのアクセス方法は [アクセラレータ最適化ノー�
 
 ### ジョブスクリプトの準備 {#prep-job-scripts}
 
-ジョブスクリプトのサンプルは `/lustre12/software/alphafold3/v3.0.2/sample_scripts/run_alphafold3.sh` に置いてあります。
+ジョブスクリプトのサンプルは `/lustre12/software/alphafold3/v3.0.3/sample_scripts/run_alphafold3.sh` に置いてあります。
 
 以下が**slurm**に登録するジョブスクリプト `run_alphafold3.sh`の内容になります。
 
@@ -82,7 +82,7 @@ INPUT_JSON_PATH="${HOME}/alphafold3/input/input.json"
 OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
 HMMER3_BINDIR="/hmmer/bin"
@@ -186,7 +186,7 @@ drwxr-xr-x 2 y-okuda-pg ddbj-m-pg     4096 10月 14 19:45 seed-1_sample-4
 
 #### ジョブスクリプトの準備 {#prepare-job-scripts}
 
-ジョブスクリプトのサンプルは `/lustre12/software/alphafold3/v3.0.2/sample_scripts/run_alphafold3_msa.sh` または `/lustre10/software/alphafold3/v3.0.2/sample_scripts/run_alphafold3_msa.sh` に置いてあります。
+ジョブスクリプトのサンプルは `/lustre12/software/alphafold3/v3.0.3/sample_scripts/run_alphafold3_msa.sh` または `/lustre10/software/alphafold3/v3.0.3/sample_scripts/run_alphafold3_msa.sh` に置いてあります。
 
 以下がデータベース検索パートを実行する`run_alphafold3_msa.sh`の内容になります。
 
@@ -201,7 +201,7 @@ OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
 DB_DIR="/lustre10/software/alphafold3/database"
-IMAGE_PATH="/lustre10/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
+IMAGE_PATH="/lustre10/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -269,7 +269,7 @@ DB_DIRは、実行場所が一般解析区画の場合 `/lustre10/software/alpha
 
 - 11行目：
 
-IMAGE_PATHは、実行場所が**一般解析区画**の場合 `/lustre10/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif`、**個人ゲノム解析区画**の場合 `/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif` となります。
+IMAGE_PATHは、実行場所が**一般解析区画**の場合 `/lustre10/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif`、**個人ゲノム解析区画**の場合 `/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif` となります。
 
 AlphaFold3 の実行スクリプト中ではMSAの処理に最大**32 CPUコア**を使用する設定ですが、**16 CPUコア**以上を指定しても処理速度の向上は見られません。そのため、使用するCPUコア数の割り当てを `-c 16` としてあります。
 
@@ -352,7 +352,7 @@ OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -462,7 +462,7 @@ OUTPUT_DIR="${HOME}/alphafold3_test/output"
 MODEL_DIR="${HOME}/alphafold3_test/models"
 
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
