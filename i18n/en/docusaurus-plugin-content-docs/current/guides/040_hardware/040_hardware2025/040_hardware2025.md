@@ -128,31 +128,33 @@ title: Supercomputer (2025 hardware)
       </td>
 </tr>
 
-
 <tr>
 <td width="120" rowspan="3">
 Storage
 
 </td>
 <td colspan="2">
-Analysis storage<br />
-For user home directories in the general analysis division and personal genome analysis division.
+Large-capacity, high-speed storage <br />
+User home area in the General Analysis Division and the Personal Genome Analysis Division
 </td>
 <td>
 Lustre file system<br />
-13.3PB
+General Analysis Division: 10.7PB<br />
+Personal Genome Analysis Division: 11.8PB<br />
+Total capacity: 22.5PB
 </td>
 </tr>
 <tr>
 <td colspan="2">
-Database storage<br />
-For DDBJ database including DRA
+Storage for databases<br />
+Area storing DDBJ databases such as DRA
 </td>
 <td>
 Lustre file system<br />
-40.5PB
+Total capacity: 61.7PB
 </td>
 </tr>
+
 <tr>
 <td colspan="2">
 Tape equipment<br />
