@@ -1,5 +1,5 @@
 ---
-id: cuda
+id: CUDA
 title: "CUDA"
 ---
 

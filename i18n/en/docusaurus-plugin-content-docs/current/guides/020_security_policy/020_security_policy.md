@@ -1,5 +1,5 @@
 ---
-id: security-policy
+id: security_policy
 title: Information Security Policy (ISO27001)
 ---
 

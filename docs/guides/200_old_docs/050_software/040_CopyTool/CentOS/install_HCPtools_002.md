@@ -56,4 +56,4 @@ $ cp -rp ~/ hcp-tools-1.3.0-42/conf/ ~/.hcp
 
 HCP tools の設定ファイルをユーザディレクトリに設置し、ユーザ認証のための公開鍵の設定を追記します。
 
-手順については[設定ファイルの書き方](/guides/old_docs/software/CopyTool/archaea_conf/)を参照して下さい。
+手順については[設定ファイルの書き方](/guides/old_docs/software/CopyTool/hcptools_conf/)を参照して下さい。

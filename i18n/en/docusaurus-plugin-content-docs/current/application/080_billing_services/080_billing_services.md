@@ -1,5 +1,5 @@
 ---
-id: billing_service
+id: billing_services
 title: "How to use billing services"
 ---
 

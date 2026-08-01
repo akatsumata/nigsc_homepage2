@@ -1,5 +1,5 @@
 ---
-id: ga_interactiove_login
+id: ga_interactive_login
 title: "インタラクティブノードへのログイン方法(一般解析区画)"
 ---
 

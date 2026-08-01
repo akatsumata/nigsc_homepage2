@@ -1,5 +1,5 @@
 ---
-id: hardware
+id: hardware2025
 title: Supercomputer (2025 hardware)
 ---
 

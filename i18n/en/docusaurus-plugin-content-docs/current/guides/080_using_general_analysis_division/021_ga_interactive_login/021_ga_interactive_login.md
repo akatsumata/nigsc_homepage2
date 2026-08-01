@@ -1,5 +1,5 @@
 ---
-id: 021_ga_interactive_login
+id: ga_interactive_login
 title: "How to Login to the Interactive node (The general analysis division)"
 ---
 

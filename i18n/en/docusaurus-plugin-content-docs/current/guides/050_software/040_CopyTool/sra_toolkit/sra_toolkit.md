@@ -1,5 +1,5 @@
 ---
-id: sratoolkit
+id: sra_toolkit
 title: How to use SraToolkit
 ---
 

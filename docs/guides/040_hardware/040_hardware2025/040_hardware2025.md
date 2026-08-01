@@ -169,6 +169,7 @@ Lustre ファイルシステム<br />
 合計容量：61.7PB
 </td>
 </tr>
+
 <tr>
 <td colspan="2">
 テープ装置<br />

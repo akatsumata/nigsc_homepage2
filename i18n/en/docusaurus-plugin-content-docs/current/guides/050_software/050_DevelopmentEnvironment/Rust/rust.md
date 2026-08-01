@@ -1,5 +1,5 @@
 ---
-id: rust
+id: Rust
 title: "Rust"
 ---
 

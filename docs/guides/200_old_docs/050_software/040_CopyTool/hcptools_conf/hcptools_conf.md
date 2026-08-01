@@ -1,5 +1,5 @@
 ---
-id: archaea_conf
+id: hcptools_conf
 title: 設定ファイルの書き方
 ---
 
